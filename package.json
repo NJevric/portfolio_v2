@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss/ -o assets/style/",
+    "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/portfolio\"",
+    "start": "npm run open"
+  },
+  "author": "Nikola Jevric",
+  "license": "ISC",
+  "dependencies": {
+    "fullpage.js": "^3.0.9",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "http-server": "^0.12.3",
+    "node-sass": "^4.14.1"
+  }
+}
