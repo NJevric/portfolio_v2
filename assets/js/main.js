@@ -7,30 +7,57 @@ window.onload=function(){
     home : "home",
     about : "aboutt",
     work : "workk",
-    contact : "contactt"
+    contact : "contactt",
+    arrow : "arrow"
   };
-
+  
+ 
   window.addEventListener('scroll',function(){
+
     let scroll = window.scrollY;
-    // console.log(scroll);
-    if(scroll<900){
-      $(`#${objCircleNav.home}`).addClass(objCircleNav.klasa);
-      $(`#${objCircleNav.about}`).removeClass(objCircleNav.klasa);
+    
+    let scrollNav = () => {
+      if(scroll>50){
+
+      }
     }
-    if(scroll<1800 && scroll >= 900){
-      $(`#${objCircleNav.home}`).removeClass(objCircleNav.klasa);
-      $(`#${objCircleNav.about}`).addClass(objCircleNav.klasa);
-      $(`#${objCircleNav.work}`).removeClass(objCircleNav.klasa);
+
+    let scrollArrow = () => {
+
+      let domArrow =  document.getElementById(objCircleNav.arrow);
+
+      if(scroll>150){
+        domArrow = domArrow.style.display='block';
+      }
+      else{
+        domArrow =  domArrow.style.display='none';
+      }
+      return domArrow;
     }
-    if(scroll<2700 && scroll >= 1800){
-      $(`#${objCircleNav.about}`).removeClass(objCircleNav.klasa);
-      $(`#${objCircleNav.work}`).addClass(objCircleNav.klasa);
-      $(`#${objCircleNav.contact}`).removeClass(objCircleNav.klasa);
+    
+    let scrollPageNav = () => {
+      if(scroll<900){
+        $(`#${objCircleNav.home}`).addClass(objCircleNav.klasa);
+        $(`#${objCircleNav.about}`).removeClass(objCircleNav.klasa);
+      }
+      if(scroll<1800 && scroll >= 900){
+        $(`#${objCircleNav.home}`).removeClass(objCircleNav.klasa);
+        $(`#${objCircleNav.about}`).addClass(objCircleNav.klasa);
+        $(`#${objCircleNav.work}`).removeClass(objCircleNav.klasa);
+      }
+      if(scroll<2700 && scroll >= 1800){
+        $(`#${objCircleNav.about}`).removeClass(objCircleNav.klasa);
+        $(`#${objCircleNav.work}`).addClass(objCircleNav.klasa);
+        $(`#${objCircleNav.contact}`).removeClass(objCircleNav.klasa);
+      }
+      if(scroll<3600 && scroll >= 2700){
+        $(`#${objCircleNav.work}`).removeClass(objCircleNav.klasa);
+        $(`#${objCircleNav.contact}`).addClass(objCircleNav.klasa);
+      }
     }
-    if(scroll<3600 && scroll >= 2700){
-      $(`#${objCircleNav.work}`).removeClass(objCircleNav.klasa);
-      $(`#${objCircleNav.contact}`).addClass(objCircleNav.klasa);
-    }
+   
+    scrollPageNav();
+    scrollArrow();
   })
 //   $(window).scroll(function () {
 //     var scroll = $(window).scrollTop();
