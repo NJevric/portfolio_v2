@@ -8,7 +8,9 @@ window.onload=function(){
     about : "aboutt",
     work : "workk",
     contact : "contactt",
-    arrow : "arrow"
+    arrow : "arrow",
+    page: "page",
+    social: "social"
   };
   
  
@@ -59,6 +61,32 @@ window.onload=function(){
     scrollPageNav();
     scrollArrow();
   })
+
+  const load = document.querySelectorAll('#loadSvg path');
+  console.log(load);
+  for(let i of load){
+    console.log(`Letter ${i} is ${i.getTotalLength()}`);
+  }
+  
+  // JS load animation
+  setTimeout(function(){
+    document.getElementById('loadSvg').classList.remove('load');
+    document.getElementById(objCircleNav.social).style.visibility = 'visible';
+    document.getElementById(objCircleNav.page).style.visibility = 'visible';
+    document.getElementById('main').style.visibility = 'visible';
+    document.getElementById(objCircleNav.arrow).style.visibility = 'visible';
+    document.getElementById('header').style.visibility = 'visible';  
+    document.getElementById('footer').style.visibility = 'visible';  
+    document.getElementById('load').style.display = 'none';  
+  },4000);
+
+  // jquery load animation
+  // setTimeout(function(){
+  //   $("#loadSvg").removeClass('load');
+  // },3100);
+   
+    
+  
 //   $(window).scroll(function () {
 //     var scroll = $(window).scrollTop();
 //     if(scroll<900){
