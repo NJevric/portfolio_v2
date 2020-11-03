@@ -52,21 +52,21 @@ let scrollAnimacija = () => {
           return height;
         }
         
-        if(scroll< (bodyHeight()*0.25) ){
+        if(scroll< (bodyHeight()*0.23) ){
           $(`#${objCircleNav.home}`).addClass(objCircleNav.klasa);
           $(`#${objCircleNav.about}`).removeClass(objCircleNav.klasa);
         }
-        if(scroll < (bodyHeight()*0.5) && scroll >= (bodyHeight()*0.25) ){
+        if(scroll < (bodyHeight()*0.47) && scroll >= (bodyHeight()*0.23) ){
           $(`#${objCircleNav.home}`).removeClass(objCircleNav.klasa);
           $(`#${objCircleNav.about}`).addClass(objCircleNav.klasa);
           $(`#${objCircleNav.work}`).removeClass(objCircleNav.klasa);
         }
-        if(scroll < (bodyHeight()*0.75) && scroll >= (bodyHeight()*0.5)){
+        if(scroll < (bodyHeight()*0.73) && scroll >= (bodyHeight()*0.47)){
           $(`#${objCircleNav.about}`).removeClass(objCircleNav.klasa);
           $(`#${objCircleNav.work}`).addClass(objCircleNav.klasa);
           $(`#${objCircleNav.contact}`).removeClass(objCircleNav.klasa);
         }
-        if(scroll < bodyHeight() && scroll >= (bodyHeight()*0.75)){
+        if(scroll < bodyHeight() && scroll >= (bodyHeight()*0.73)){
           $(`#${objCircleNav.work}`).removeClass(objCircleNav.klasa);
           $(`#${objCircleNav.contact}`).addClass(objCircleNav.klasa);
         }
