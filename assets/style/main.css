@@ -281,7 +281,7 @@ header, main, #page,
   to {
     fill: #fff; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   h2 {
     font-size: 2em !important; }
   header nav .logo_img {
