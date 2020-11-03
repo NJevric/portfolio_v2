@@ -16,7 +16,7 @@ body {
   background-color: #000 !important; }
 
 header {
-  height: 100vh; }
+  min-height: 100vh; }
   header nav {
     top: 0px; }
     header nav .logo_img {
@@ -89,6 +89,8 @@ main #work {
   color: #FFFBFA;
   display: flex;
   justify-content: space-between; }
+  main #work .responsiveHeadline {
+    display: none; }
   main #work #project {
     margin: auto; }
     main #work #project h2 {
@@ -174,6 +176,12 @@ footer {
     #arrow a:hover {
       font-size: 40px;
       padding-right: 5px; }
+    #arrow a:visited {
+      padding-right: 0px; }
+    #arrow a:active {
+      padding-right: 0px; }
+    #arrow a:link {
+      padding-right: 0px; }
 
 #social {
   display: flex;
@@ -217,61 +225,51 @@ footer {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: fill .5s ease forwards 3s; }
+    animation: fill .3s ease forwards 2.5s; }
+  #load path:nth-child(1) {
+    stroke-dasharray: 331.2341613769531;
+    stroke-dashoffset: 331.2341613769531;
+    animation: loadAnimacija 1s ease forwards; }
+  #load path:nth-child(2) {
+    stroke-dasharray: 287.74371337890625;
+    stroke-dashoffset: 287.74371337890625;
+    animation: loadAnimacija  1s ease forwards 0.15s; }
+  #load path:nth-child(3) {
+    stroke-dasharray: 204.6783905029297;
+    stroke-dashoffset: 204.6783905029297;
+    animation: loadAnimacija 1s ease forwards 0.3s; }
+  #load path:nth-child(4) {
+    stroke-dasharray: 204.6783905029297;
+    stroke-dashoffset: 204.6783905029297;
+    animation: loadAnimacija 1s ease forwards 0.45s; }
+  #load path:nth-child(5) {
+    stroke-dasharray: 299.7310485839844;
+    stroke-dashoffset: 299.7310485839844;
+    animation: loadAnimacija 1s ease forwards .6s; }
+  #load path:nth-child(6) {
+    stroke-dasharray: 457.3367614746094;
+    stroke-dashoffset: 457.3367614746094;
+    animation: loadAnimacija 1s ease forwards .75s; }
+  #load path:nth-child(7) {
+    stroke-dasharray: 299.7310485839844;
+    stroke-dashoffset: 299.7310485839844;
+    animation: loadAnimacija 1s ease forwards 1s; }
+  #load path:nth-child(8) {
+    stroke-dasharray: 326.8431701660156;
+    stroke-dashoffset: 326.8431701660156;
+    animation: loadAnimacija 1s ease forwards 1.15s; }
+  #load path:nth-child(9) {
+    stroke-dasharray: 204.67889404296875;
+    stroke-dashoffset: 204.67889404296875;
+    animation: loadAnimacija 1s ease forwards 1.3s; }
+  #load path:nth-child(10) {
+    stroke-dasharray: 313.2584228515625;
+    stroke-dashoffset: 313.2584228515625;
+    animation: loadAnimacija 1s ease forwards 1.45s; }
 
 header, main, #page,
 #social, #arrow, #footer {
   visibility: hidden; }
-
-#loadSvg path:nth-child(1) {
-  stroke-dasharray: 331.2341613769531;
-  stroke-dashoffset: 331.2341613769531;
-  animation: loadAnimacija 1.8s ease forwards; }
-
-#loadSvg path:nth-child(2) {
-  stroke-dasharray: 287.74371337890625;
-  stroke-dashoffset: 287.74371337890625;
-  animation: loadAnimacija 1.8s ease forwards 0.2s; }
-
-#loadSvg path:nth-child(3) {
-  stroke-dasharray: 204.6783905029297;
-  stroke-dashoffset: 204.6783905029297;
-  animation: loadAnimacija 1.8s ease forwards 0.4s; }
-
-#loadSvg path:nth-child(4) {
-  stroke-dasharray: 204.6783905029297;
-  stroke-dashoffset: 204.6783905029297;
-  animation: loadAnimacija 1.8s ease forwards 0.6s; }
-
-#loadSvg path:nth-child(5) {
-  stroke-dasharray: 299.7310485839844;
-  stroke-dashoffset: 299.7310485839844;
-  animation: loadAnimacija 1.8s ease forwards .8s; }
-
-#loadSvg path:nth-child(6) {
-  stroke-dasharray: 457.3367614746094;
-  stroke-dashoffset: 457.3367614746094;
-  animation: loadAnimacija 1.8s ease forwards 1s; }
-
-#loadSvg path:nth-child(7) {
-  stroke-dasharray: 299.7310485839844;
-  stroke-dashoffset: 299.7310485839844;
-  animation: loadAnimacija 1.8s ease forwards 1.2s; }
-
-#loadSvg path:nth-child(8) {
-  stroke-dasharray: 326.8431701660156;
-  stroke-dashoffset: 326.8431701660156;
-  animation: loadAnimacija 1.8s ease forwards 1.4s; }
-
-#loadSvg path:nth-child(9) {
-  stroke-dasharray: 204.67889404296875;
-  stroke-dashoffset: 204.67889404296875;
-  animation: loadAnimacija 1.8s ease forwards 1.6s; }
-
-#loadSvg path:nth-child(10) {
-  stroke-dasharray: 313.2584228515625;
-  stroke-dashoffset: 313.2584228515625;
-  animation: loadAnimacija 1.8s ease forwards 1.8s; }
 
 @keyframes loadAnimacija {
   to {
@@ -282,3 +280,87 @@ header, main, #page,
     fill: transparent; }
   to {
     fill: #fff; } }
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 2em !important; }
+  header nav .logo_img {
+    width: 45px; }
+  header #headline {
+    width: 90%; }
+    header #headline h1 {
+      font-size: 2.5em !important;
+      margin-top: 25%; }
+    header #headline p {
+      width: 80%;
+      font-size: .95em; }
+    header #headline a {
+      padding: 10px;
+      font-size: 1.05em; }
+  main #about {
+    flex-direction: column; }
+    main #about .about {
+      width: 90%;
+      border-left: 0px;
+      padding-left: 0px;
+      font-size: .95em; }
+      main #about .about .lista ul:first-of-type {
+        margin-right: 65px;
+        margin-left: 20px; }
+    main #about img {
+      display: none; }
+  main #work {
+    width: 100%;
+    flex-direction: column-reverse; }
+    main #work .responsiveHeadline {
+      display: block;
+      margin-bottom: 30px;
+      line-height: 1 !important;
+      width: 90%;
+      margin-left: 10%; }
+    main #work .responsiveParagraph {
+      visibility: hidden; }
+    main #work .project {
+      float: none;
+      width: 100%;
+      flex-direction: row;
+      margin: 0px;
+      overflow-x: visible; }
+      main #work .project img {
+        width: 80%;
+        height: 80%;
+        margin: 0px 10px; }
+        main #work .project img:hover {
+          transform: scale(1);
+          margin-top: 20px; }
+    main #work #project {
+      width: 90%; }
+      main #work #project h2 {
+        display: none; }
+      main #work #project p {
+        width: 100%;
+        font-size: .95em; }
+  footer #contact {
+    width: 90%; }
+    footer #contact .tekst p {
+      font-size: .95em;
+      width: 90%;
+      margin: 0px auto 50px auto; }
+    footer #contact .tekst a {
+      font-size: 1.05em;
+      padding: 10px; }
+  #page, #arrow {
+    right: 5px; }
+  #social {
+    position: absolute;
+    bottom: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #social a {
+      margin: 0px 10px;
+      font-size: 24px; }
+      #social a:hover {
+        padding: 0px;
+        transform: scale(1.1); } }
