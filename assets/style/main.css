@@ -310,8 +310,7 @@ header, main, #page,
         height: 80%;
         margin: 0px 10px; }
         main #work .project img:hover {
-          transform: scale(1);
-          margin-top: 20px; }
+          transform: scale(1.2); }
     main #work #project {
       width: 90%; }
       main #work #project h2 {
