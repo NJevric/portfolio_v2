@@ -281,7 +281,7 @@ header, main, #page,
   to {
     fill: #fff; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   h2 {
     font-size: 2em !important; }
   header nav .logo_img {
@@ -361,4 +361,7 @@ header, main, #page,
       font-size: 24px; }
       #social a:hover {
         padding: 0px;
-        transform: scale(1.1); } }
+        transform: scale(1.1); }
+  #load .load {
+    width: 75%;
+    height: 75%; } }
