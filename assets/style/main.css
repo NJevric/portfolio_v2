@@ -318,8 +318,6 @@ header, main, #page,
       line-height: 1 !important;
       width: 90%;
       margin-left: 10%; }
-    main #work .responsiveParagraph {
-      visibility: hidden; }
     main #work .project {
       float: none;
       width: 100%;
