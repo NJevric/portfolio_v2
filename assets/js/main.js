@@ -19,7 +19,7 @@ let scrollAnimacija = () => {
         about : "aboutt",
         work : "workk",
         contact : "contactt",
-        arrow : "arrow",
+        // arrow : "arrow",
        
       };
   
@@ -28,18 +28,18 @@ let scrollAnimacija = () => {
     
         }
       }
-      let scrollArrow = () => {
+      // let scrollArrow = () => {
   
-        let domArrow =  document.getElementById(objCircleNav.arrow);
+      //   let domArrow =  document.getElementById(objCircleNav.arrow);
     
-        if(scroll>150){
-          domArrow = domArrow.style.display='block';
-        }
-        else{
-          domArrow =  domArrow.style.display='none';
-        }
-        return domArrow;
-      }
+      //   if(scroll>150){
+      //     domArrow = domArrow.style.display='block';
+      //   }
+      //   else{
+      //     domArrow =  domArrow.style.display='none';
+      //   }
+      //   return domArrow;
+      // }
       let scrollPageNav = () => {
         
         const bodyHeight = () => {
@@ -73,7 +73,7 @@ let scrollAnimacija = () => {
       }
 
       scrollNav();
-      scrollArrow();
+      // scrollArrow();
       scrollPageNav();
     }
     catch(err){
@@ -93,7 +93,7 @@ let loadAnimacija = function(){
       header: 'header',
       main: 'main',
       footer: 'footer',
-      arrow: 'arrow'
+     
     }
 
     // pronadji path za stroke-dasharray
@@ -111,12 +111,12 @@ let loadAnimacija = function(){
       document.getElementById(objLoadAnimacija.page).style.visibility = objLoadAnimacija.cssProperty;
       document.getElementById(objLoadAnimacija.header).style.visibility = objLoadAnimacija.cssProperty;
       document.getElementById(objLoadAnimacija.main).style.visibility = objLoadAnimacija.cssProperty;
-      document.getElementById(objLoadAnimacija.arrow).style.visibility = objLoadAnimacija.cssProperty;
+     
       document.getElementById(objLoadAnimacija.main).style.visibility = objLoadAnimacija.cssProperty;  
       document.getElementById(objLoadAnimacija.footer).style.visibility = objLoadAnimacija.cssProperty;  
       document.getElementById('load').style.display = 'none';  
 
-    },3500);
+    },3200);
   }
 
   catch(err){
@@ -124,3 +124,6 @@ let loadAnimacija = function(){
   }
   
 }
+
+//Nav
+
