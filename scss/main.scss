@@ -25,7 +25,7 @@ body{
 }
 
 header{
-    height: $visina;
+    min-height: $visina;
     nav{
         
         top:0px;
@@ -137,7 +137,9 @@ main{
         color:$boja_slova;
         display: flex;
         justify-content: space-between;
-
+        .responsiveHeadline{
+            display:none;
+        }
         #project{
             margin:auto;
             h2{
@@ -285,6 +287,15 @@ footer{
             font-size:40px;
             padding-right: 5px;
         }
+        &:visited{
+            padding-right: 0px;
+        }
+        &:active{
+            padding-right: 0px;
+        }
+        &:link{
+            padding-right: 0px;
+        }
     }
 }
 
@@ -346,65 +357,66 @@ footer{
         top:40%;
         left:50%;
         transform:translate(-50%, -50%); 
-        animation: fill .5s ease forwards 3s;
+        animation: fill .3s ease forwards 2.5s;
        
     }
-    
+    path:nth-child(1){
+        stroke-dasharray: 331.2341613769531;
+        stroke-dashoffset: 331.2341613769531;
+        animation: loadAnimacija 1s ease forwards;
+    }
+    path:nth-child(2){
+        stroke-dasharray: 287.74371337890625;
+        stroke-dashoffset: 287.74371337890625;
+        animation: loadAnimacija  1s ease forwards 0.15s;
+    }
+    path:nth-child(3){
+        stroke-dasharray: 204.6783905029297;
+        stroke-dashoffset: 204.6783905029297;
+        animation: loadAnimacija 1s ease forwards 0.3s;
+    }
+    path:nth-child(4){
+        stroke-dasharray: 204.6783905029297;
+        stroke-dashoffset: 204.6783905029297;
+        animation: loadAnimacija 1s ease forwards 0.45s;
+    }
+    path:nth-child(5){
+        stroke-dasharray: 299.7310485839844;
+        stroke-dashoffset: 299.7310485839844;
+        animation: loadAnimacija 1s ease forwards .6s;
+    }
+    path:nth-child(6){
+        stroke-dasharray: 457.3367614746094;
+        stroke-dashoffset: 457.3367614746094;
+        animation: loadAnimacija 1s ease forwards .75s;
+    }
+    path:nth-child(7){
+        stroke-dasharray: 299.7310485839844;
+        stroke-dashoffset: 299.7310485839844;
+        animation: loadAnimacija 1s ease forwards 1s;
+    }
+    path:nth-child(8){
+        stroke-dasharray: 326.8431701660156;
+        stroke-dashoffset: 326.8431701660156;
+        animation: loadAnimacija 1s ease forwards 1.15s;
+    }
+    path:nth-child(9){
+        stroke-dasharray: 204.67889404296875;
+        stroke-dashoffset: 204.67889404296875;
+        animation: loadAnimacija 1s ease forwards 1.3s;
+    }
+    path:nth-child(10){
+        stroke-dasharray: 313.2584228515625;
+        stroke-dashoffset: 313.2584228515625;
+        animation: loadAnimacija 1s ease forwards 1.45s;
+    }
 }
 header,main,#page,
 #social,#arrow,#footer{
     visibility: hidden;
 }
-#loadSvg path:nth-child(1){
-    stroke-dasharray: 331.2341613769531;
-    stroke-dashoffset: 331.2341613769531;
-    animation: loadAnimacija 1.8s ease forwards;
-}
-#loadSvg path:nth-child(2){
-    stroke-dasharray: 287.74371337890625;
-    stroke-dashoffset: 287.74371337890625;
-    animation: loadAnimacija 1.8s ease forwards 0.2s;
-}
-#loadSvg path:nth-child(3){
-    stroke-dasharray: 204.6783905029297;
-    stroke-dashoffset: 204.6783905029297;
-    animation: loadAnimacija 1.8s ease forwards 0.4s;
-}
-#loadSvg path:nth-child(4){
-    stroke-dasharray: 204.6783905029297;
-    stroke-dashoffset: 204.6783905029297;
-    animation: loadAnimacija 1.8s ease forwards 0.6s;
-}
-#loadSvg path:nth-child(5){
-    stroke-dasharray: 299.7310485839844;
-    stroke-dashoffset: 299.7310485839844;
-    animation: loadAnimacija 1.8s ease forwards .8s;
-}
-#loadSvg path:nth-child(6){
-    stroke-dasharray: 457.3367614746094;
-    stroke-dashoffset: 457.3367614746094;
-    animation: loadAnimacija 1.8s ease forwards 1s;
-}
-#loadSvg path:nth-child(7){
-    stroke-dasharray: 299.7310485839844;
-    stroke-dashoffset: 299.7310485839844;
-    animation: loadAnimacija 1.8s ease forwards 1.2s;
-}
-#loadSvg path:nth-child(8){
-    stroke-dasharray: 326.8431701660156;
-    stroke-dashoffset: 326.8431701660156;
-    animation: loadAnimacija 1.8s ease forwards 1.4s;
-}
-#loadSvg path:nth-child(9){
-    stroke-dasharray: 204.67889404296875;
-    stroke-dashoffset: 204.67889404296875;
-    animation: loadAnimacija 1.8s ease forwards 1.6s;
-}
-#loadSvg path:nth-child(10){
-    stroke-dasharray: 313.2584228515625;
-    stroke-dashoffset: 313.2584228515625;
-    animation: loadAnimacija 1.8s ease forwards 1.8s;
-}
+
+
 
 @keyframes loadAnimacija{
     to{
@@ -417,5 +429,149 @@ header,main,#page,
     }
     to{
         fill:#fff;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    h2{
+        font-size:2em!important;
+    }
+    header{
+        nav{
+            .logo_img{
+                width: 45px;
+            }
+        }
+        #headline{
+            width:90%;
+            h1{
+                font-size:2.5em!important;
+                margin-top: 25%;
+            }
+            p{
+                width: 80%;
+                font-size:.95em;
+            }
+            a{
+                padding:10px;
+                font-size:1.05em;
+            }
+        }
+      
+    }
+    main{
+        
+        #about{
+            flex-direction: column;
+            .about{
+                width:90%;
+                border-left: 0px;
+                padding-left: 0px;
+                font-size:.95em;
+                .lista{
+                    ul:first-of-type{
+                        margin-right: 65px;
+                        margin-left:20px;
+                    }
+                }
+            }
+            img{
+                display: none;
+            }
+        }
+
+        #work{
+            .responsiveHeadline{
+                display:block;
+                margin-bottom: 30px;
+                line-height: 1 !important;
+                width:90%;
+                margin-left: 10%;
+
+                
+            }
+            .responsiveParagraph{
+                visibility: hidden;
+            }
+            width: 100%;
+            flex-direction: column-reverse;
+            .project{
+                float:none;
+                width:100%;
+                flex-direction: row;
+                
+                margin:0px;
+                overflow-x:visible;
+                
+                img{
+                    // width:100%;
+                    // height:100%;
+                    width:80%;
+                    height:80%;
+                    margin:0px 10px;
+                    // margin:0px auto;
+                    &:hover{
+                        transform:scale(1);
+                        margin-top:20px;
+                        // padding-top:20px;
+                        // overflow: visible;
+                        // box-shadow: 0px;
+                        // overflow-y:visible;
+                        // widows: 80%;
+                        // height:80%;
+                        // border:2px solid #ED213A
+                    }
+                }
+            }
+            #project{
+                width:90%;
+                // padding-top: 20px;
+                h2{
+                    display: none;
+                }
+                p{
+                    width:100%;
+                    font-size:.95em;
+                }
+            }
+        }
+    }
+    footer{
+        #contact{
+            width:90%;
+            .tekst{
+                p{
+                    font-size:.95em;
+                    width:90%;
+                    margin:0px auto 50px auto;
+                }
+                a{
+                    font-size:1.05em;
+                    padding:10px;
+                   
+                }
+            }
+        }
+    }
+    #page,#arrow{
+        right: 5px;
+    }
+    #social{
+       
+        position:absolute;
+        bottom:40px;
+        flex-direction: row;
+        justify-content:space-around;
+        left:50%;
+        transform:translate(-50%, -50%); 
+        a{
+            margin:0px 10px;
+            font-size:24px;
+            &:hover{
+               padding:0px;
+                transform: scale(1.1);
+            }
+        }
     }
 }
