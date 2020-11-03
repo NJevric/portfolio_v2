@@ -162,32 +162,12 @@ footer {
     display: flex;
     justify-content: center; }
 
-#arrow {
-  color: #fff;
-  font-size: 36px;
-  float: right;
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  display: none; }
-  #arrow a {
-    color: #fff;
-    transition: .3s ease; }
-    #arrow a:hover {
-      font-size: 40px;
-      padding-right: 5px; }
-    #arrow a:visited {
-      padding-right: 0px; }
-    #arrow a:active {
-      padding-right: 0px; }
-    #arrow a:link {
-      padding-right: 0px; }
-
 #social {
   display: flex;
   flex-direction: column;
   position: fixed;
-  bottom: 20px;
+  bottom: 50%;
+  transform: translate(50%, 50%);
   left: 25px;
   font-size: 20px; }
   #social a {
@@ -204,7 +184,8 @@ footer {
   flex-direction: column;
   position: fixed;
   right: 20px;
-  top: 45%;
+  top: 50%;
+  transform: translate(50%, -50%);
   color: #fff; }
   #page a {
     color: #fff; }
@@ -268,7 +249,7 @@ footer {
     animation: loadAnimacija 1s ease forwards 1.45s; }
 
 header, main, #page,
-#social, #arrow, #footer {
+#social, #footer {
   visibility: hidden; }
 
 @keyframes loadAnimacija {
@@ -347,7 +328,7 @@ header, main, #page,
     footer #contact .tekst a {
       font-size: 1.05em;
       padding: 10px; }
-  #page, #arrow {
+  #page {
     right: 5px; }
   #social {
     position: absolute;
