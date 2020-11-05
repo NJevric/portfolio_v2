@@ -109,7 +109,7 @@ header {
       margin-top: 16%;
       font-size: 4.5em; }
       header #headline h1 span {
-        background-image: linear-gradient(#ED213A, #93291E);
+        background-color: rgba(237, 33, 58, 0.75);
         padding: 0px 10px; }
     header #headline p {
       width: 700px;
@@ -141,6 +141,8 @@ main #about {
       display: flex; }
       main #about .about .lista ul:first-of-type {
         margin-right: 20px; }
+  main #about .responsiveImg {
+    display: none; }
   main #about img {
     margin: auto;
     width: 300px;
@@ -347,6 +349,10 @@ header, main, #page,
 @media screen and (max-width: 960px) {
   header nav .big {
     display: none; }
+  header nav .small a {
+    width: 35%; }
+    header nav .small a:hover {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.7); }
   header nav .small .navIco {
     display: block; }
   header nav .small .animacija {
@@ -357,6 +363,10 @@ header, main, #page,
     display: flex;
     flex-direction: column;
     animation: tekst 1s; }
+    header nav .small .navTextResponsive a:hover {
+      padding-bottom: 20px;
+      border-bottom: 2px solid #000;
+      border-radius: 2px; }
   header nav .small .clickText {
     display: none; } }
 
@@ -370,7 +380,7 @@ header, main, #page,
   header nav .smallClick {
     width: 70%; }
     header nav .smallClick a {
-      width: 50%;
+      width: 45%;
       margin: 0px;
       padding: 30px;
       margin: 0px auto; }
@@ -392,10 +402,22 @@ header, main, #page,
       border-left: 0px;
       padding-left: 0px;
       font-size: .95em; }
+      main #about .about h2 {
+        padding: 10px 0px; }
       main #about .about .lista ul:first-of-type {
         margin-right: 65px;
         margin-left: 20px; }
-    main #about img {
+    main #about .responsiveImg {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      margin-bottom: 30px;
+      justify-content: center; }
+      main #about .responsiveImg:hover {
+        border: 0px;
+        border: 1px solid #ed213a;
+        transition: .3s ease; }
+    main #about .nonResponsiveImg {
       display: none; }
   main #work {
     width: 100%;
@@ -405,7 +427,8 @@ header, main, #page,
       margin-bottom: 30px;
       line-height: 1 !important;
       width: 90%;
-      margin-left: 10%; }
+      margin: 0px auto 30px auto;
+      padding: 10px 0px; }
     main #work .project {
       float: none;
       width: 100%;
@@ -427,6 +450,8 @@ header, main, #page,
         font-size: .95em; }
   footer #contact {
     width: 90%; }
+    footer #contact .tekst h2 {
+      padding: 10px 0px; }
     footer #contact .tekst p {
       font-size: .95em;
       width: 90%;
