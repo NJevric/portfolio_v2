@@ -1,5 +1,6 @@
 window.onload=function(){
   loadAnimacija();
+  navigacija();
 
 }
 
@@ -116,7 +117,7 @@ let loadAnimacija = function(){
       document.getElementById(objLoadAnimacija.footer).style.visibility = objLoadAnimacija.cssProperty;  
       document.getElementById('load').style.display = 'none';  
 
-    },3200);
+    },1);
   }
 
   catch(err){
@@ -125,5 +126,27 @@ let loadAnimacija = function(){
   
 }
 
+
 //Nav
+
+let navigacija = () => {
+  document.querySelector('.navIco').addEventListener('click',function(e){
+    e.preventDefault();
+    console.log('kliknuto');
+    document.querySelector('.small').classList.toggle('smallClick');
+    document.querySelector('.navOpen').classList.toggle('navOpened');
+    document.querySelector('.navTextResponsive').classList.toggle('clickText');
+    document.querySelector('.navIco').classList.toggle('animacija');
+    document.querySelector('.navIco').classList.toggle('animacijaNazad');
+    // let ispisNavigacije = () => {
+    //   let ispis = `<a class="" href="#about">About</a>
+    //   <a class="" href="#work">Work</a>
+    //   <a class="" href="#contact">Contact</a>`;
+    //   return document.querySelector('.navTextResponsive').innerHTML=ispis;
+    // }
+    // ispisNavigacije();
+  });
+  
+}
+
 
