@@ -1185,21 +1185,24 @@ header,main,#page,
                         padding:10px;
                         h3{
                             margin:5px 0px;
-                            font-size:1.3em;
+                            font-size:1.2em;
                         }
                         .desc{
                             width: 100%;
+                            text-align: left;
+                            margin-left: 5px;
                         }
                         .tech{
                             width:100%;
+                            
                             li{
                                 padding:5px;
                                 margin:0px 5px;
-                                font-size:0.9em;
+                                font-size:0.8em;
                             }
                         }
                         .links{
-                            font-size:1em;
+                            font-size:.9em;
                         }
                     }
                 }
