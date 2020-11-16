@@ -111,7 +111,7 @@ header {
   header #headline {
     color: #FFFBFA;
     width: 850px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     margin-top: 10%;
     height: auto;
@@ -659,6 +659,9 @@ header, main, #page,
         padding: 55px 0px; }
       main #work .project .img_wrap img:visited {
         padding: 55px 0px; }
+    main #work .project .img_wrap:hover .img_desc {
+      box-shadow: none;
+      overflow-x: visible; }
     main #work .project .img_wrap .img_desc {
       width: 100%;
       padding: 10px; }
@@ -734,10 +737,7 @@ header, main, #page,
     main #work .project .img_wrap {
       overflow-x: visible; }
       main #work .project .img_wrap .img_desc {
-        width: 120%; }
-      main #work .project .img_wrap:hover .img_desc {
-        box-shadow: none;
-        overflow-x: visible; } }
+        width: 120%; } }
 
 @media screen and (max-width: 320px) {
   h2 {
