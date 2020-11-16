@@ -1,4 +1,6 @@
 window.onload=function(){
+  document.querySelector('.navIco').style.color='#fff';
+          
   loadAnimacija();
   navigacija();
 
@@ -71,10 +73,21 @@ let scrollAnimacija = () => {
           $(`#${objCircleNav.work}`).removeClass(objCircleNav.klasa);
           $(`#${objCircleNav.contact}`).addClass(objCircleNav.klasa);
         }
-      }
 
-      scrollNav();
-      // scrollArrow();
+        let scrollNav = () => {
+          
+            
+          if(scroll> (bodyHeight()*0.25)){
+            document.querySelector('.navIco').style.color='#333';
+          }
+          else{
+            document.querySelector('.navIco').style.color='#fff';
+          }
+        }
+        scrollNav();
+      }
+      
+     
       scrollPageNav();
     }
     catch(err){
@@ -117,7 +130,7 @@ let loadAnimacija = function(){
       document.getElementById(objLoadAnimacija.footer).style.visibility = objLoadAnimacija.cssProperty;  
       document.getElementById('load').style.display = 'none';  
 
-    },3500);
+    },3000);
   }
 
   catch(err){
@@ -145,6 +158,7 @@ let navigacija = () => {
     //   return document.querySelector('.navTextResponsive').innerHTML=ispis;
     // }
     // ispisNavigacije();
+    
   });
   
 }
