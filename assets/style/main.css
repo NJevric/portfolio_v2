@@ -664,17 +664,19 @@ header, main, #page,
       padding: 10px; }
       main #work .project .img_wrap .img_desc h3 {
         margin: 5px 0px;
-        font-size: 1.3em; }
+        font-size: 1.2em; }
       main #work .project .img_wrap .img_desc .desc {
-        width: 100%; }
+        width: 100%;
+        text-align: left;
+        margin-left: 5px; }
       main #work .project .img_wrap .img_desc .tech {
         width: 100%; }
         main #work .project .img_wrap .img_desc .tech li {
           padding: 5px;
           margin: 0px 5px;
-          font-size: 0.9em; }
+          font-size: 0.8em; }
       main #work .project .img_wrap .img_desc .links {
-        font-size: 1em; }
+        font-size: .9em; }
   footer #contact .tekst {
     padding: 40px 10px; }
     footer #contact .tekst h2 {
