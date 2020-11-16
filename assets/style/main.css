@@ -611,6 +611,8 @@ header, main, #page,
       width: 100%; } }
 
 @media screen and (max-width: 415px) {
+  h2 {
+    width: 70% !important; }
   .container {
     width: 90% !important; }
   .navOpened {
@@ -630,10 +632,11 @@ header, main, #page,
     width: 175px;
     bottom: -180px; }
   header #headline {
+    padding: 30px 20px;
     width: 90%; }
     header #headline h1 {
-      font-size: 2.5em !important;
-      margin-top: 25%; }
+      margin-top: 0px;
+      font-size: 2.5em !important; }
     header #headline p {
       width: 90%;
       font-size: 1em; }
@@ -712,12 +715,10 @@ header, main, #page,
     height: 100%; } }
 
 @media screen and (max-width: 375px) {
+  h2 {
+    width: 75% !important; }
   header nav .small a {
     font-size: 1.3em; }
-  header #headline {
-    padding: 30px 20px; }
-    header #headline h1 {
-      margin-top: 0px; }
   header .aaa {
     bottom: -150px; }
   main #about h2 {
