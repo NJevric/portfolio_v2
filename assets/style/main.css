@@ -192,7 +192,7 @@ main {
     background-image: linear-gradient(#131a43, #0b0837);
     height: 100vh;
     color: #FFFBFA;
-    padding: 50px 0px; }
+    padding: 50px 15px; }
     main #work .responsiveHeadline {
       display: none; }
     main #work h2 {
@@ -695,42 +695,47 @@ header, main, #page,
         padding: 10px 0px; }
       main #about .about .lista ul {
         margin-left: 20px; }
-  main #work .project {
-    height: 600px; }
-    main #work .project .img_wrap {
-      transition: .3s ease; }
-      main #work .project .img_wrap:link {
-        padding-bottom: 110px; }
-      main #work .project .img_wrap:hover {
-        padding-bottom: 110px; }
-      main #work .project .img_wrap:active {
-        padding-bottom: 110px; }
-      main #work .project .img_wrap:visited {
-        padding-bottom: 110px; }
-      main #work .project .img_wrap img {
-        width: 100%;
-        transition: 0.3s ease; }
-      main #work .project .img_wrap .img_desc {
-        width: 100%;
-        padding: 10px; }
-        main #work .project .img_wrap .img_desc h3 {
-          margin: 5px 0px;
-          font-size: 1.2em; }
-        main #work .project .img_wrap .img_desc .desc {
+  main #work {
+    width: 80% !important;
+    padding: 20px 0px; }
+    main #work h2 {
+      width: 100%; }
+    main #work .project {
+      height: 600px; }
+      main #work .project .img_wrap {
+        transition: .3s ease; }
+        main #work .project .img_wrap:link {
+          padding-bottom: 110px; }
+        main #work .project .img_wrap:hover {
+          padding-bottom: 110px; }
+        main #work .project .img_wrap:active {
+          padding-bottom: 110px; }
+        main #work .project .img_wrap:visited {
+          padding-bottom: 110px; }
+        main #work .project .img_wrap img {
           width: 100%;
-          text-align: left;
-          margin-left: 5px; }
-        main #work .project .img_wrap .img_desc .tech {
-          width: 100%; }
-          main #work .project .img_wrap .img_desc .tech li {
-            padding: 5px;
-            margin: 0px 5px;
-            font-size: 0.8em; }
-        main #work .project .img_wrap .img_desc:hover {
-          box-shadow: none;
-          overflow-x: visible; }
-        main #work .project .img_wrap .img_desc .links {
-          font-size: .9em; }
+          transition: 0.3s ease; }
+        main #work .project .img_wrap .img_desc {
+          width: 100%;
+          padding: 10px; }
+          main #work .project .img_wrap .img_desc h3 {
+            margin: 5px 0px;
+            font-size: 1.2em; }
+          main #work .project .img_wrap .img_desc .desc {
+            width: 100%;
+            text-align: left;
+            margin-left: 5px; }
+          main #work .project .img_wrap .img_desc .tech {
+            width: 100%; }
+            main #work .project .img_wrap .img_desc .tech li {
+              padding: 5px;
+              margin: 0px 5px;
+              font-size: 0.8em; }
+          main #work .project .img_wrap .img_desc:hover {
+            box-shadow: none;
+            overflow-x: visible; }
+          main #work .project .img_wrap .img_desc .links {
+            font-size: .9em; }
   footer #contact .tekst {
     padding: 0px 10px; }
     footer #contact .tekst h2 {
@@ -778,12 +783,14 @@ header, main, #page,
   main #work h2 {
     width: 75%; }
   footer #contact .tekst {
-    height: 55vh;
+    height: 60vh;
     padding: 10px 10px; }
     footer #contact .tekst p {
       font-size: .95em; }
     footer #contact .tekst a {
-      font-size: 1em; } }
+      font-size: 1em; }
+  #social {
+    bottom: 30px; } }
 
 @media screen and (max-width: 360px) {
   main .animacijaAbout {
