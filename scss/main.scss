@@ -25,13 +25,23 @@ h1,h2,h3,h4{
     font-family: 'Work Sans', sans-serif;
 } 
 h2{
+    font-size:3.7em;
+    // background-color: transparent;
+   
+    // margin:0px auto 80px auto;
+    margin-bottom: 50px;
+     text-align: center;
+     // margin:70px auto;
+     padding:10px 0px;
+
     
-    font-size:3em!important;
-    background-color:rgba($color: #ed213a, $alpha: .75);
-    width:280px;
-    padding-left: 10px;
+     color:#333;
+    // font-size:3em!important;
+    // background-color:rgba($color: #ed213a, $alpha: .75);
+    // width:280px;
+    // padding-left: 10px;
     text-align: center;
-    border-radius: 50px;
+    // border-radius: 50px;
     // clip-path: polygon(0 0, 90% 0, 100% 100%, 10% 100%);
       
 }
@@ -41,7 +51,7 @@ body{
     // height: 1000px;
     position:relative;
     // background-color:#000 !important;
-    background-image: url("../img/pozadina5.jpg");
+    // background-image: url("../img/pozadina11.jpg");
     background-repeat: repeat;
     // background-size: cover;
 }
@@ -56,7 +66,7 @@ body{
     transition:.8s ease;
 }
 header{
-    background-image: url("../img/pozadina5.jpg");
+    // background-image: url("../img/pozadina11.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: $visina;
@@ -155,7 +165,7 @@ header{
     #headline{
         color:$boja_slova;
         width: 850px;
-        background-color: rgba($color: #000000, $alpha: .25);
+        // background-color: rgba($color: #000000, $alpha: .5);
         border-radius: 20px;
         margin-top:10%;
         height: auto;
@@ -186,14 +196,14 @@ header{
             font-size:1.1em;
             font-weight: 600;
             text-decoration: none;
-            border-radius: 15px;
-            border:5px solid #ed213a;
+            // border-radius: 5px;
+            border:3px solid #ed213a;
           transition:.5s ease;
 
             &:hover{
-               
+                
                 background-color:rgba($color: #ed213a, $alpha: .75);
-                border:5px solid rgba(0,0,0,0.0);
+                border:3px solid rgba(0,0,0,0.0);
                 
                 // background:rgba(0,0,0,0.0);
               
@@ -215,43 +225,61 @@ header{
     }
 }
 main{
+ 
     // background-color:#FCC9B9;
     background-color: rgba($color: #FCFCFC, $alpha: 1);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    .animacijaAbout{
+        position: absolute;
+        top:320px;
+        right:280px;
+        width:500px;
+    }
     #about{
+        
         min-height: $visina;
-        padding-top: 180px;
+        padding-top: 80px;
+        
         // display:flex;
         h2{
-            
-            
-            margin:0px auto 80px auto;
+            font-size:3.7em;
+            background-color: transparent;
+           
+            // margin:0px auto 80px auto;
+            margin-bottom: 50px;
              text-align: center;
              // margin:70px auto;
              padding:10px 0px;
              width:30%;
              color:#f3f3f3;
-          
+             color:#333;
            
              
          }
         .about{
-
-            // margin:300px auto;
-            
+            position:relative;
+            // margin:50px auto;
+            // left:-150px;
             // width:600px;
             font-family: $font_paragraf;
             color:#333;
             font-size: 1.1em;
             justify-content: space-between;
-           
+            margin-left:20px;
             
             .levoAbout{
                 .tekst{
+                    
                     p{
+                        // z-index: 10000000;
                         font-size:1.15em;
-                        width:900px;
+                        width:650px;
                         text-align: justify;
-                        margin:0px auto;
+                        // margin:0px auto;
                         &:first-of-type{
                             margin-bottom: 20px;
                         }
@@ -263,26 +291,32 @@ main{
                 }
                 
                 .lista{
+                    // background-image: url('../img/animacija6.gif');
+                    // background-repeat: no-repeat;
+                    // background-position: center;
                     width:900px;
-                    margin:auto;
-                    display: flex;
-                    justify-content: space-around;
+                    // margin:auto;
+                    // display: flex;
+                    // justify-content: center;
+                    // justify-content: center;
                     font-weight: 600;
                     font-size:1.15em;
                     // justify-content:space-between;
              
                    ul{
+                    
+                       margin-left: 30px;
                        margin-top:20px;
                     &:first-of-type{
-                        // margin-right: 50px;
+                        margin-right: 0px;
                     }
-                    &:last-of-type{
-                        li{
-                            img{
-                                width:350px;
-                            }
-                        }
-                    }
+                    // &:last-of-type{
+                    //     li{
+                    //         img{
+                    //             width:350px;
+                    //         }
+                    //     }
+                    // }
                    }
                 }
             }
@@ -303,7 +337,16 @@ main{
     #work{
         border-radius: 5px;
         // border-radius: 50px;
-        background-image: url("../img/pozadina5.jpg");
+        // background-image: url("../img/pozadina11.jpg");
+        // background-image:linear-gradient(to right, #131a43,#093679) ;
+        background-image:linear-gradient(#131a43,#0b0837) ;
+        // background-image:linear-gradient(#131a43,#000) ;
+        // background-image: url('../img/animacija.gif');
+        // background-image: url("../img/animacija2.gif");
+        // background-repeat: no-repeat;
+        // background-position: bottom;
+        // background-size: cover;
+
         height: $visina;
         color:$boja_slova;
         padding:50px 0px;
@@ -313,11 +356,15 @@ main{
             display:none;
         }
         h2{
-            margin-bottom: 5vh;;
-           width:30%;
-           margin-bottom:100px;
-           padding:10px 0px;
-           margin:auto;
+        //     margin-bottom: 5vh;;
+        //    width:30%;
+        //    margin-bottom:100px;
+        //    padding:10px 0px;
+        //    margin:auto;
+        color:#fcfcfc;
+                padding:10px 0px;
+                margin:10px auto;
+                font-size:3.7em;
         }
         #project{
             margin:auto;
@@ -419,13 +466,17 @@ main{
                     z-index: 1000;
                     color:#FCFCFC;
                     transition: opacity .5s, visibility .5s;
-                    background-color: rgba($color: #D24D57, $alpha: .95);
+                    // background-color: rgba($color: #D24D57, $alpha: .95);
+                    background-color: rgba($color:#fcfcfc, $alpha: 1);
+                   
+                    color:#333;
                     width:600px;
                     height: 101%;
                     border-radius: 5px;
                     
                     h3{
                        margin:25px 0px;
+                       
                     }
                     .desc{
                         font-size:1.05em;
@@ -440,9 +491,9 @@ main{
                         justify-content: space-around;
                         li{
                             width: 120px;
-                           background: #fff;
-                           border-radius: 5px;
-                           color:#333;
+                           background: #333;
+                           border-radius: 2px;
+                           color:#fff;
                         //    padding:10px;
                         padding:5px 0px;
                            font-weight: 600;
@@ -453,14 +504,14 @@ main{
                         font-weight: 600;
                         a{
                             margin:0px 10px;
-                            color:#fff;
+                            color:#333;
                             text-decoration: none;
                             padding: 5px;
-                            border-radius: 5px;
+                            border-radius: 2px;
                             border:2px solid rgba($color: #000000, $alpha: 0);
                             text-transform: uppercase;
                             &:hover{
-                                border: 2px solid #fff;
+                                border: 2px solid #000000;
                                
                             }
                         }
@@ -513,37 +564,49 @@ footer{
         text-align: center;
        
        .tekst{
-            background-image: url("../img/pozadina5.jpg");
+            // background-image: url("../img/pozadina11.jpg");
+            background-image:linear-gradient(#0b0837,#0a021d) ;
+            // background-image: url("../img/animacija.gif");
+           
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
             padding:50px 100px;
             margin:auto;
             border-radius: 5px;
             width:100%;
             height:50vh;
             h2{
-                width:40%;
+                // width:40%;
                 color:#fcfcfc;
                 padding:10px 0px;
-                margin:30px auto 30px auto;
+                margin:20px auto 20px auto;
+                font-size:3.7em;
             }
             p{
                 font-size:1.15em;
             //   margin-bottom: 50px;
                 width:500px;
-                margin:50px auto;
+                margin:0px auto;
+                margin-bottom: 60px;
                 font-weight: 600;
+                color:#fcfcfc;
             }
             a{
-                color:#333;
-                padding:10px 20px;
-                font-size:1.1em;
-                font-weight: 600;
-                text-decoration: none;
-                border:5px solid rgba($color: #ED213A, $alpha: .7);
-                border-radius: 20px;
+              
+               
+                color:#fff;
+            padding:15px 20px;
+            font-size:1.1em;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 2px;
+            border:3px solid #ed213a;
+          transition:.5s ease;
                 
                 &:hover{
                     transition: .5s ease;
-                    border:5px solid rgba(0,0,0,0.0);
+                    border:3px solid rgba(0,0,0,0.0);
                     background-color: rgba($color: #ED213A, $alpha: .7);
                     // background:rgba(0,0,0,0.0);
                     color:#fff;
@@ -599,13 +662,9 @@ footer{
     left:25px;
     font-size:22px;
     a{
-        color:#333;
-        transition: .5s ease;
-        &:hover{
-            // padding-left: 2px;
-            
-            
-        }
+        color:#f3f3f3;
+        // transition: .5s ease;
+        
     }
     .social{
         padding:10px 0px;
@@ -623,7 +682,8 @@ footer{
     transform:translate(50%, -50%); 
     // color:#333;
     a{
-        color:#333;
+        color:#f3f3f3;
+        // color:#333;
     }
     .page_circle{
         padding:5px 0px;
@@ -631,6 +691,8 @@ footer{
     }
 
     .active{
+        // background-color: #f3f3f3;
+        color:#333;
         background-color:#333;
         border-radius:50%;
         height:5px;
@@ -746,8 +808,17 @@ header,main,#page,
         fill:#fff;
     }
 }
-
+@media screen and (max-width:1600px){
+    main{
+        .animacijaAbout{
+            width:450px;
+        }
+    }
+}
 @media screen and (max-width:1440px){
+    h2{
+        font-size: 3.3em!important;
+    }
     .container{
         max-width: 960px!important;
     }
@@ -759,11 +830,37 @@ header,main,#page,
         } 
     }   
     main{
+        .animacijaAbout{
+            position: absolute;
+            top:350px;
+            right:280px;
+            width:400px;
+        }
         #about{
-            padding-top: 150px;
+            padding-top: 100px;
+            h2{
+                text-align: left;
+                width:100%;
+            }
+            .about{
+                .levoAbout{
+                    .tekst{
+                        p{
+                            font-size:1.1em;
+                        }
+                    }
+                    .lista{
+                        font-size:1.1em;
+                        ul{
+                            margin-left:0px;
+                        }
+                    }
+                }
+            }
             .about .levoAbout .lista ul:last-of-type li img {
                 width: 300px;
             }
+           
         }
         #work{
             .project{
@@ -796,15 +893,21 @@ header,main,#page,
         }
     }
     main{
+        .animacijaAbout{
+            top:250px;
+            width:350px;
+        }
         #about{
+            padding-top:50px;
             h2{
+                
                 margin:0px auto 50px auto;
             }
             .about .levoAbout .lista ul:last-of-type li img {
                 width: 250px;
             }
             .about .levoAbout .tekst p {
-                width: 800px;
+                width:600px;
             }
         }
         #work{
@@ -910,24 +1013,29 @@ header,main,#page,
         width: 720px!important;
     }
     main{
+        .animacijaAbout{
+            width:400px;
+            top:700px;
+        }
         #about{
             padding-top: 200px;
             h2{
-                width:50%;
-                margin: 0px auto 50px auto;
-                
+                // width:50%;
+                margin-left:10px;
+            
             }
             .about{
                 .levoAbout{
                     .tekst{
                         p{
+                            // margin:0px auto;
                             width: 550px;
                             font-size:1.1em;
                         }
                     }
                     .lista{
                         width:720px;
-                        margin-left: 100px;
+                        // margin-left: 100px;
                         flex-direction: column;
                         font-size:1.15em;
                     }
@@ -969,6 +1077,9 @@ header,main,#page,
                       
 }
 @media screen and (max-width:768px){
+    // #page{
+    //     display: none;
+    // }
     .container{
         width: 80% !important;
     }
@@ -1034,6 +1145,15 @@ header,main,#page,
         }
     }
     main {
+        .animacijaAbout{
+            top:500px;
+            width:400px;
+            left:300px;
+        }
+        #about{
+            padding-top: 100px;
+        }
+        
         #about .about .levoAbout{
             .tekst{
                 p{
@@ -1080,6 +1200,9 @@ header,main,#page,
     
 }
 @media screen and (max-width:415px){
+    h2{
+        width:70%!important;
+    }
     .container {
         width: 90% !important;
     }
@@ -1115,11 +1238,14 @@ header,main,#page,
             width: 175px;
             bottom:-180px;
         }
+        
         #headline{
+            padding:30px 20px;
             width:90%;
             h1{
+                margin-top:0px;
                 font-size:2.5em!important;
-                margin-top: 25%;
+                // margin-top: 25%;
             }
             p{
                 width: 90%;
@@ -1133,10 +1259,14 @@ header,main,#page,
       
     }
     main{
-        
+        .animacijaAbout{
+            top:550px;
+            width:225px;
+            left:150px;
+        }
         #about{
             flex-direction: column;
-            padding-top: 100px;
+            padding-top: 50px;
             .about{
               
                 font-size:1em;
@@ -1180,6 +1310,10 @@ header,main,#page,
                         }
                         
                     }
+                    &:hover .img_desc{
+                        box-shadow: none;
+                        overflow-x: visible;
+                    }
                     .img_desc{
                         width:100%;
                         padding:10px;
@@ -1201,6 +1335,7 @@ header,main,#page,
                                 font-size:0.8em;
                             }
                         }
+                        
                         .links{
                             font-size:.9em;
                         }
@@ -1268,6 +1403,9 @@ header,main,#page,
     }
 }
 @media screen and (max-width:375px){
+    h2{
+        width:75%!important;
+    }
     header{
         nav{
             
@@ -1278,21 +1416,27 @@ header,main,#page,
                 }
             }
         }
-        #headline{
-            padding:30px 20px;
-            h1{
-                margin-top:0px;
-            }
-        }
+        // #headline{
+        //     padding:30px 20px;
+        //     h1{
+        //         margin-top:0px;
+        //     }
+        // }
         .aaa{
             bottom:-150px;
         }
     }
     main{
+        .animacijaAbout{
+       
+            width:200px;
+        }
         #about{
+
             h2{
                 width: 75%;
             }
+            padding-bottom: 100px;
         }
         #work{
             h2{
@@ -1317,6 +1461,25 @@ header,main,#page,
 }
 @media screen and (max-width:360px){
     main{
+        .animacijaAbout{
+        //    display: none;
+        width:160px;
+        left:180px;
+        }
+        #about{
+            padding-top:20px;
+            padding-bottom: 50px;
+            .about{
+
+                .levoAbout{
+                    .lista{
+                        margin-top: 0px;
+                        margin-left:0px;
+                        font-size:1em;
+                    }
+                }
+            }
+        }
         #work{
             .project{
                 height: 500px;
@@ -1326,10 +1489,7 @@ header,main,#page,
                         width: 120%;
                         
                     }
-                    &:hover .img_desc{
-                        box-shadow: none;
-                        overflow-x: visible;
-                    }
+                   
                 }
             }
         }
@@ -1346,6 +1506,9 @@ header,main,#page,
         }
     }
     main{
+        .animacijaAbout{
+            display: none;
+        }
         #work{
             .project{
                 height: 400px;
