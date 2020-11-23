@@ -166,7 +166,7 @@ let loadAnimacija = function(){
       document.getElementById(objLoadAnimacija.footer).style.visibility = objLoadAnimacija.cssProperty;  
       document.getElementById('load').style.display = 'none';  
 
-    },2000);
+    },1600);
   }
 
   catch(err){
