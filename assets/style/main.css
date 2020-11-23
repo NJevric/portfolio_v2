@@ -370,87 +370,30 @@ footer {
     margin: 10px 0px; }
 
 #load {
-  z-index: 1000; }
-  #load .load {
-    width: 50%;
-    height: 50%;
-    position: fixed;
-    top: 40%;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  z-index: 100000;
+  background-color: #131a43; }
+  #load .linija progress {
+    width: 200px;
+    position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    animation: fill .3s ease forwards 2.5s; }
-  #load path:nth-child(1) {
-    stroke-dasharray: 331.2341613769531;
-    stroke-dashoffset: 331.2341613769531;
-    animation: loadAnimacija 1s ease forwards; }
-  #load path:nth-child(2) {
-    stroke-dasharray: 287.74371337890625;
-    stroke-dashoffset: 287.74371337890625;
-    animation: loadAnimacija  1s ease forwards 0.15s; }
-  #load path:nth-child(3) {
-    stroke-dasharray: 204.6783905029297;
-    stroke-dashoffset: 204.6783905029297;
-    animation: loadAnimacija 1s ease forwards 0.3s; }
-  #load path:nth-child(4) {
-    stroke-dasharray: 204.6783905029297;
-    stroke-dashoffset: 204.6783905029297;
-    animation: loadAnimacija 1s ease forwards 0.45s; }
-  #load path:nth-child(5) {
-    stroke-dasharray: 299.7310485839844;
-    stroke-dashoffset: 299.7310485839844;
-    animation: loadAnimacija 1s ease forwards .6s; }
-  #load path:nth-child(6) {
-    stroke-dasharray: 457.3367614746094;
-    stroke-dashoffset: 457.3367614746094;
-    animation: loadAnimacija 1s ease forwards .75s; }
-  #load path:nth-child(7) {
-    stroke-dasharray: 299.7310485839844;
-    stroke-dashoffset: 299.7310485839844;
-    animation: loadAnimacija 1s ease forwards 1s; }
-  #load path:nth-child(8) {
-    stroke-dasharray: 326.8431701660156;
-    stroke-dashoffset: 326.8431701660156;
-    animation: loadAnimacija 1s ease forwards 1.15s; }
-  #load path:nth-child(9) {
-    stroke-dasharray: 204.67889404296875;
-    stroke-dashoffset: 204.67889404296875;
-    animation: loadAnimacija 1s ease forwards 1.3s; }
-  #load path:nth-child(10) {
-    stroke-dasharray: 313.2584228515625;
-    stroke-dashoffset: 313.2584228515625;
-    animation: loadAnimacija 1s ease forwards 1.45s; }
+    transform: translate(-50%, -50%); }
+
+@keyframes loadAnimacija {
+  0% {
+    background-color: red; }
+  50% {
+    background-color: blue; }
+  100% {
+    background-color: red; } }
 
 header, main, #page,
 #social, #footer {
   visibility: hidden; }
-
-@keyframes tekst {
-  from {
-    margin-right: 50px; }
-  to {
-    margin-right: 0px; } }
-
-@keyframes hamburger {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-
-@keyframes hamburgerNazad {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(-360deg); } }
-
-@keyframes loadAnimacija {
-  to {
-    stroke-dashoffset: 0; } }
-
-@keyframes fill {
-  from {
-    fill: transparent; }
-  to {
-    fill: #fff; } }
 
 @media screen and (max-width: 1600px) {
   main .animacijaAbout {
