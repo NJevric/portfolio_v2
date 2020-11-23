@@ -299,6 +299,7 @@ footer {
     text-align: center; }
     footer #contact .tekst {
       background-image: linear-gradient(#0b0837, #0a021d);
+      background-image: linear-gradient(#23153c, #0a021d);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -375,13 +376,21 @@ footer {
   position: fixed;
   top: 0px;
   z-index: 100000;
-  background-color: #131a43; }
+  background-color: #23153c; }
   #load .linija progress {
     width: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  #load .linija #procenat {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 10000001;
+    font-weight: 500; }
 
 @keyframes loadAnimacija {
   0% {

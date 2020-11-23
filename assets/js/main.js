@@ -4,8 +4,65 @@ window.onload=function(){
   loadAnimacija();
   navigacija();
 
+  // VANTA.HALO({
+  //   el: "#work",
+  //   mouseControls: true,
+  //   touchControls: true,
+  //   gyroControls: true,
+  //   minHeight: 200.00,
+  //   minWidth: 200.00,
+  //   amplitudeFactor: 0.70,
+  //   xOffset: -0.3,
+  //   yOffset: -0.2,
+  //   size: .9
+   
+  // })
+
+  //   VANTA.HALO({
+  //   el: "#header",
+  //   mouseControls: true,
+  //   touchControls: true,
+  //   gyroControls: true,
+  //   minHeight: 200.00,
+  //   minWidth: 200.00,
+  //   amplitudeFactor: 0.70,
+  //   xOffset: 0.1,
+  //   yOffset: -0.1,
+  //   size: 0.75
+  // })
+  VANTA.NET({
+    el: "#header",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    points: 9.00,
+    spacing: 12.00
   
- 
+  });
+  VANTA.NET({
+    el: "#work",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00
+  });
+  // VANTA.NET({
+  //   el: "#tekst",
+  //   mouseControls: true,
+  //   touchControls: true,
+  //   gyroControls: false,
+  //   minHeight: 200.00,
+  //   minWidth: 200.00,
+  //   scale: 1.00,
+  //   scaleMobile: 1.00
+  // });
 }
 
 window.onscroll = function(){
@@ -150,6 +207,7 @@ let loadAnimacija = function(){
         setTimeout(a,15,i);
       }
       atribut.setAttribute('value',i);
+      document.querySelector('#procenat').innerHTML=`${i}%`;
     }
     a(0);
 
@@ -166,7 +224,7 @@ let loadAnimacija = function(){
       document.getElementById(objLoadAnimacija.footer).style.visibility = objLoadAnimacija.cssProperty;  
       document.getElementById('load').style.display = 'none';  
 
-    },2000);
+    },1800);
   }
 
   catch(err){
@@ -199,4 +257,12 @@ let navigacija = () => {
   
 }
 
+let projekti = () => {
+  try{
+
+  }
+  catch(err){
+    console.log(err.message);
+  }
+}
 
