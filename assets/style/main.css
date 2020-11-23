@@ -656,7 +656,7 @@ header, main, #page,
   .container {
     width: 90% !important; }
   h2 {
-    font-size: 2em !important; }
+    font-size: 2.5em !important; }
   header nav .logo img {
     width: 45px; }
   header nav .smallClick {
@@ -697,39 +697,44 @@ header, main, #page,
         margin-left: 20px; }
   main #work .project {
     height: 600px; }
-    main #work .project .img_wrap img {
-      width: 100%; }
-      main #work .project .img_wrap img:hover {
-        padding: 55px 0px; }
-      main #work .project .img_wrap img:active {
-        padding: 55px 0px; }
-      main #work .project .img_wrap img:visited {
-        padding: 55px 0px; }
-    main #work .project .img_wrap:hover .img_desc {
-      box-shadow: none;
-      overflow-x: visible; }
-    main #work .project .img_wrap .img_desc {
-      width: 100%;
-      padding: 10px; }
-      main #work .project .img_wrap .img_desc h3 {
-        margin: 5px 0px;
-        font-size: 1.2em; }
-      main #work .project .img_wrap .img_desc .desc {
+    main #work .project .img_wrap {
+      transition: .3s ease; }
+      main #work .project .img_wrap:link {
+        padding-bottom: 110px; }
+      main #work .project .img_wrap:hover {
+        padding-bottom: 110px; }
+      main #work .project .img_wrap:active {
+        padding-bottom: 110px; }
+      main #work .project .img_wrap:visited {
+        padding-bottom: 110px; }
+      main #work .project .img_wrap img {
         width: 100%;
-        text-align: left;
-        margin-left: 5px; }
-      main #work .project .img_wrap .img_desc .tech {
-        width: 100%; }
-        main #work .project .img_wrap .img_desc .tech li {
-          padding: 5px;
-          margin: 0px 5px;
-          font-size: 0.8em; }
-      main #work .project .img_wrap .img_desc .links {
-        font-size: .9em; }
+        transition: 0.3s ease; }
+      main #work .project .img_wrap .img_desc {
+        width: 100%;
+        padding: 10px; }
+        main #work .project .img_wrap .img_desc h3 {
+          margin: 5px 0px;
+          font-size: 1.2em; }
+        main #work .project .img_wrap .img_desc .desc {
+          width: 100%;
+          text-align: left;
+          margin-left: 5px; }
+        main #work .project .img_wrap .img_desc .tech {
+          width: 100%; }
+          main #work .project .img_wrap .img_desc .tech li {
+            padding: 5px;
+            margin: 0px 5px;
+            font-size: 0.8em; }
+        main #work .project .img_wrap .img_desc:hover {
+          box-shadow: none;
+          overflow-x: visible; }
+        main #work .project .img_wrap .img_desc .links {
+          font-size: .9em; }
   footer #contact .tekst {
-    padding: 40px 10px; }
+    padding: 0px 10px; }
     footer #contact .tekst h2 {
-      width: 75%;
+      width: 100%;
       padding: 10px 0px; }
     footer #contact .tekst p {
       font-size: 1em;
@@ -773,6 +778,7 @@ header, main, #page,
   main #work h2 {
     width: 75%; }
   footer #contact .tekst {
+    height: 55vh;
     padding: 10px 10px; }
     footer #contact .tekst p {
       font-size: .95em; }
@@ -795,12 +801,18 @@ header, main, #page,
     main #work .project .img_wrap {
       overflow-x: visible; }
       main #work .project .img_wrap .img_desc {
-        width: 120%; } }
+        width: 100%; }
+        main #work .project .img_wrap .img_desc .links a {
+          margin: 0px; }
+  footer #contact .tekst {
+    height: 65vh;
+    padding: 10px 10px; }
+  #social {
+    bottom: 20px; } }
 
 @media screen and (max-width: 320px) {
   h2 {
-    font-size: 1.8em;
-    width: 90% !important; }
+    font-size: 1.8em; }
   header .aaa {
     width: 150px; }
   main .animacijaAbout {
@@ -809,5 +821,7 @@ header, main, #page,
     height: 400px; }
   footer #contact .tekst {
     height: 60vh; }
+    footer #contact .tekst h2 {
+      font-size: 1.5em !important; }
   #social {
-    bottom: 20px; } }
+    bottom: 0px; } }
