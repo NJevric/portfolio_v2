@@ -1,5 +1,5 @@
 window.onload=function(){
-  document.querySelector('.navIco').style.color='#fff';
+  // document.querySelector('.navIco').style.color='#fff';
   // document.querySelector('#social a').style.color='#fff';
   loadAnimacija();
   navigacija();
@@ -81,7 +81,7 @@ let scrollAnimacija = () => {
         
 
           if(scroll> (bodyHeight()*0.25)){
-            document.querySelector('.navIco').style.color='#333';
+            // document.querySelector('.navIco').style.color='#333';
           }
           if(scroll > (bodyHeight()*0.125)){
             for(let i of socials){
@@ -94,7 +94,7 @@ let scrollAnimacija = () => {
            
           }
           else{
-            document.querySelector('.navIco').style.color='#fff';
+            // document.querySelector('.navIco').style.color='#fff';
             for(let i of socials){
               i.style.color='#fff';
             }
