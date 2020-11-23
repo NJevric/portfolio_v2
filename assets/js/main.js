@@ -1,6 +1,6 @@
 window.onload=function(){
   document.querySelector('.navIco').style.color='#fff';
-          
+  // document.querySelector('#social a').style.color='#fff';
   loadAnimacija();
   navigacija();
 
@@ -75,13 +75,34 @@ let scrollAnimacija = () => {
         }
 
         let scrollNav = () => {
-          
-            
+
+          let socials =  document.querySelectorAll('#social a');
+          let pageLinks= document.querySelectorAll('.link');
+        
+
           if(scroll> (bodyHeight()*0.25)){
             document.querySelector('.navIco').style.color='#333';
           }
+          if(scroll > (bodyHeight()*0.125)){
+            for(let i of socials){
+              i.style.color='#333';
+            }
+            for(let i of pageLinks){
+              i.style.color='#333';
+              
+            }
+           
+          }
           else{
             document.querySelector('.navIco').style.color='#fff';
+            for(let i of socials){
+              i.style.color='#fff';
+            }
+            for(let i of pageLinks){
+              i.style.color='#fff';
+              
+            }
+         
           }
         }
         scrollNav();
@@ -130,7 +151,7 @@ let loadAnimacija = function(){
       document.getElementById(objLoadAnimacija.footer).style.visibility = objLoadAnimacija.cssProperty;  
       document.getElementById('load').style.display = 'none';  
 
-    },3000);
+    },1);
   }
 
   catch(err){
