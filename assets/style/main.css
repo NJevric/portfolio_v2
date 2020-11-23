@@ -395,6 +395,24 @@ header, main, #page,
 #social, #footer {
   visibility: hidden; }
 
+@keyframes tekst {
+  from {
+    margin-right: 50px; }
+  to {
+    margin-right: 0px; } }
+
+@keyframes hamburger {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes hamburgerNazad {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-360deg); } }
+
 @media screen and (max-width: 1600px) {
   main .animacijaAbout {
     width: 450px; } }
