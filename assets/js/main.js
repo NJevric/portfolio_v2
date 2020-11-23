@@ -4,6 +4,8 @@ window.onload=function(){
   loadAnimacija();
   navigacija();
 
+  
+ 
 }
 
 window.onscroll = function(){
@@ -132,16 +134,29 @@ let loadAnimacija = function(){
     }
 
     // pronadji path za stroke-dasharray
-    const load = document.querySelectorAll('#loadSvg path');
-    console.log(load);
-    for(let i of load){
-      console.log(`Path ${i} is ${i.getTotalLength()}`);
+    // const load = document.querySelectorAll('#loadSvg path');
+    // console.log(load);
+    // for(let i of load){
+    //   console.log(`Path ${i} is ${i.getTotalLength()}`);
+    // }
+
+    let atribut = document.getElementById('loadAnimacija');
+  
+    let a = (i) => {
+      console.log(i++);
+
+      const maxVrednost = 100;
+      if(i<maxVrednost){
+        setTimeout(a,15,i);
+      }
+      atribut.setAttribute('value',i);
     }
+    a(0);
 
     // JS load animation
     setTimeout(function(){
 
-      document.getElementById('loadSvg').classList.remove('load');
+      // document.getElementById('load').classList.remove('load');
       document.getElementById(objLoadAnimacija.social).style.visibility = objLoadAnimacija.cssProperty;
       document.getElementById(objLoadAnimacija.page).style.visibility = objLoadAnimacija.cssProperty;
       document.getElementById(objLoadAnimacija.header).style.visibility = objLoadAnimacija.cssProperty;
@@ -151,7 +166,7 @@ let loadAnimacija = function(){
       document.getElementById(objLoadAnimacija.footer).style.visibility = objLoadAnimacija.cssProperty;  
       document.getElementById('load').style.display = 'none';  
 
-    },1);
+    },2000);
   }
 
   catch(err){
