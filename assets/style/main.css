@@ -803,8 +803,15 @@ header, main, #page,
     height: 500px; }
     main #work .project .img_wrap {
       overflow-x: visible; }
+      main #work .project .img_wrap:hover {
+        padding-bottom: 140px; }
       main #work .project .img_wrap .img_desc {
         width: 100%; }
+        main #work .project .img_wrap .img_desc h3 {
+          margin-bottom: 20px;
+          font-size: 1.15em; }
+        main #work .project .img_wrap .img_desc .tech {
+          font-size: .8em; }
         main #work .project .img_wrap .img_desc .links a {
           margin: 0px; }
   footer #contact .tekst {
@@ -822,6 +829,10 @@ header, main, #page,
     display: none; }
   main #work .project {
     height: 400px; }
+    main #work .project .img_wrap:hover {
+      padding-bottom: 200px; }
+    main #work .project .img_wrap .img_desc .links {
+      font-size: .8em; }
   footer #contact .tekst {
     height: 60vh; }
     footer #contact .tekst h2 {
