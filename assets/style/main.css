@@ -691,7 +691,8 @@ header, main, #page,
   main .animacijaAbout {
     top: 550px;
     width: 225px;
-    left: 150px; }
+    left: 150px;
+    display: none; }
   main #about {
     flex-direction: column;
     padding-top: 50px; }
