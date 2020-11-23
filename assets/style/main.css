@@ -696,7 +696,7 @@ header, main, #page,
       main #about .about .lista ul {
         margin-left: 20px; }
   main #work {
-    width: 80% !important;
+    width: 85% !important;
     padding: 20px 0px; }
     main #work h2 {
       width: 100%; }
@@ -769,7 +769,7 @@ header, main, #page,
 
 @media screen and (max-width: 375px) {
   h2 {
-    width: 75% !important; }
+    width: 100% !important; }
   header nav .small a {
     font-size: 1.3em; }
   header .aaa {
@@ -778,10 +778,6 @@ header, main, #page,
     width: 200px; }
   main #about {
     padding-bottom: 100px; }
-    main #about h2 {
-      width: 75%; }
-  main #work h2 {
-    width: 75%; }
   footer #contact .tekst {
     height: 60vh;
     padding: 10px 10px; }
