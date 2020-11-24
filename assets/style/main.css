@@ -203,12 +203,9 @@ main {
     main #work #project {
       margin: auto; }
       main #work #project p {
-        font-size: 1.05em;
-        font-weight: 600;
-        width: 500px;
         font-family: "Martel Sans", sans-serif; }
       main #work #project ul li {
-        padding: 2px 0px; }
+        padding: 5px; }
       main #work #project span {
         font-weight: 400; }
     main #work .project {
@@ -251,7 +248,7 @@ main {
           main #work .project .img_wrap .img_desc h3 {
             margin: 25px 0px; }
           main #work .project .img_wrap .img_desc .desc {
-            font-size: 1.05em;
+            font-size: 1.1em;
             text-align: justify;
             width: 90%;
             margin: 0px auto; }
@@ -259,10 +256,11 @@ main {
             width: 90%;
             display: flex;
             margin: 30px auto;
-            justify-content: space-around; }
+            justify-content: center; }
             main #work .project .img_wrap .img_desc .tech li {
+              margin: 0px 10px;
               width: 120px;
-              background: #333;
+              background: #23153c;
               border-radius: 2px;
               color: #fff;
               padding: 5px 0px;
@@ -276,10 +274,10 @@ main {
               text-decoration: none;
               padding: 5px;
               border-radius: 2px;
-              border: 2px solid rgba(0, 0, 0, 0);
+              border: 2px solid rgba(35, 21, 60, 0);
               text-transform: uppercase; }
               main #work .project .img_wrap .img_desc .links a:hover {
-                border: 2px solid #000000; }
+                border: 2px solid #23153c; }
         main #work .project .img_wrap:hover .img_desc {
           visibility: visible;
           opacity: 1;
@@ -611,10 +609,16 @@ header, main, #page,
     width: 50%; }
   main #work .project {
     height: 900px; }
-    main #work .project .img_wrap img {
-      width: 90%; }
-    main #work .project .img_wrap .img_desc {
-      width: 100%; }
+    main #work .project .img_wrap {
+      transition: .3s ease; }
+      main #work .project .img_wrap:hover {
+        padding-bottom: 60px; }
+      main #work .project .img_wrap img {
+        width: 90%; }
+      main #work .project .img_wrap .img_desc {
+        width: 90%; }
+        main #work .project .img_wrap .img_desc p {
+          width: 90%; }
   footer #contact .tekst {
     padding-top: 70px; }
     footer #contact .tekst h2 {
@@ -748,6 +752,10 @@ header, main, #page,
     width: 200px; }
   main #about {
     padding-bottom: 100px; }
+  main #work .project .img_wrap .img_desc .desc {
+    font-size: .9em; }
+  main #work .project .img_wrap .img_desc .links {
+    font-size: .8em; }
   footer #contact .tekst {
     height: 60vh;
     padding: 10px 10px; }
