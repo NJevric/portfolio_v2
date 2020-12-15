@@ -257,6 +257,18 @@ let projekti = () => {
   try{
 
     let projekat = [{
+      id: 2,
+      src: 'assets/img/projekti/urbanInfo1.png',
+      alt: 'Urban Info',
+      naslov: 'Urban Info',
+      desc: 'Used Teleport public API for searching and displaying info about the cities and quality of life among them',
+      tech: ['Bootstrap','Javascript','jQuery'],
+      links: {
+        domain: 'https://njevric.github.io/urban-info',
+        code: 'https://github.com/NJevric/urban-info'
+      }
+    },
+    {
       id: 1,
       src: 'assets/img/projekti/csa.png',
       alt: 'CSA Sports Management',
@@ -318,14 +330,26 @@ let projekti = () => {
     },
     {
       id: 6,
+      src: 'assets/img/projekti/galaxy.png',
+      alt: 'The Evolution of S',
+      naslov: 'The Evolution of S',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat doloribus neque pariatur.',
+      tech: ['Bootstrap'],
+      links: {
+        domain: 'https://njevric.github.io/galaxy-telefoni/index.html',
+        code: 'https://github.com/NJevric/galaxy-telefoni'
+      }
+    },
+    {
+      id: 7,
       src: 'assets/img/projekti/portfolio1.png',
       alt: 'Portfolio First Version',
       naslov: 'Portfolio 1st v.',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat doloribus neque pariatur.',
       tech: ['HTML','Sass','XML'],
       links: {
-        domain: 'http://blizu.rs/',
-        // code: 'www.cao1.com'
+        domain: 'https://njevric.github.io/portfolio1/',
+        code: 'https://github.com/NJevric/portfolio1'
       }
     }
   ];
